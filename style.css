@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+#body{
+    margin: 2rem;
+}
+
+#MainImage{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    color: white;
+    background-image: linear-gradient(to bottom right, brown, rgb(255, 123, 0));
+}
+
+#MainButton{
+    position: sticky;
+    top: 0;
+    height: 5rem;
+    place-content: center;
+    place-items: center;
+    display: flex;
+    background-color: rgb(65, 70, 102);
+    gap: 5rem;
+}
+
+#MainButton a {
+    margin: 5rem 0;
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+}
+
+#MainButton a:hover{
+    color: rgb(119, 111, 111);
+}
+
+#about{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#about > .aboutItem{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+}
+
+#products{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#products > .productsItems{
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+}
+
+.card{
+    border-radius: 5px;
+    padding: 5px;
+    border: solid 1px;
+}
+
+footer{
+    color: white;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom left, brown, rgb(255, 123, 0));
+}
+
+.linkies{
+    display: flex;
+    place-content: center;
+}
+
+@media screen and (max-width: 1048px) {
+    #MainButton {
+        margin: 0;
+        gap: 1rem;
+    }
+
+    #products > .productsItems{
+        flex-direction: column;
+    }
+
+    #about > .aboutItem{
+        flex-direction: column;
+    }
+}
